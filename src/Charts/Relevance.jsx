@@ -45,6 +45,7 @@ const Relevance = () => {
         }
 
         for(let key in obj){
+            console.log(key, obj[key]);
             if(key!=""){
                 arr.push({
                     
@@ -75,12 +76,15 @@ const Relevance = () => {
 
   return (
     <div>
+        <div style={{marginLeft:'5px'}}>
+      <h2 style={{textAlign:'left', marginTop:'0px', color:'#5d5a68'}}>Relevance</h2>
+      <p style={{textAlign:'left',  marginTop:'-20px' ,color:'#e0cffe'}}>By Sector</p>
+      </div>
         <Bar options = {{
     scales: {
-        xAxes: [{
-            barThickness: 6,  // number (pixels) or 'flex'
-                maxBarThickness: 8
-        }]
+        x:{
+            display:false
+        }
     }
 }} data = {state}/>
     </div>

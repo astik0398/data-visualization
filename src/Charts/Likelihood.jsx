@@ -46,6 +46,10 @@ const Likelihood = () => {
 
   return (
     <div>
+      <div style={{marginLeft:'5px'}}>
+      <h2 style={{textAlign:'left', marginTop:'0px', color:'#5d5a68'}}>Likelihood</h2>
+      <p style={{textAlign:'left',  marginTop:'-20px' ,color:'#e0cffe'}}>By Countries</p>
+      </div>
       {allData.length > 0 && (
         <div>
           <Radar

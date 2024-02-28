@@ -96,8 +96,12 @@ function Sector() {
 
   return (
     <div className="App">
-      <div style={{marginLeft:'790px', marginTop:'15px',  position: 'absolute', zIndex:'99999'}}>
-      <select style={{backgroundColor:'red', color:"white", border:'none', height:'30px', width:'125px', borderRadius:'5px', padding:'5px', outline:'none'}}  onChange={(e)=> setMonth(e.target.value)}>
+      <div style={{marginLeft:'5px'}}>
+      <h2 style={{textAlign:'left', marginTop:'0px', color:'#5d5a68'}}>Intensity</h2>
+      <p style={{textAlign:'left',  marginTop:'-20px' ,color:'#e0cffe'}}>By Dates</p>
+      </div>
+      <div style={{marginLeft:'780px', marginTop:'-60px',  position: 'absolute', zIndex:'99999'}}>
+      <select style={{ border:'1px solid #e0dfe2',  color: '#c9c4cf',height:'30px', width:'125px', borderRadius:'5px', padding:'5px', outline:'none'}}  onChange={(e)=> setMonth(e.target.value)}>
         <option value={''}>All Data</option>
         <option value={'last-month'}>Last Month</option>
         <option value={'last-two-week'}>Last Two Week</option>
